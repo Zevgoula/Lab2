@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="gr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab2-2</title>
+        <style>
+            body{
+                background-color: rgb(255, 255, 255);
+            }
+            form{
+                width: 60%;
+                height: 100%;
+            }              
+            input{
+                border: 1px solid #9e9e9e;
+                border-radius: 4px;
+            }
+
+        </style>
+      </head>
+<body>
+<form action = "" method="post">
+    <h1>Αίτηση έκδοσης πιστοποιητικού</h1>
+    <fieldset>
+      <legend>Στοιχεία φοιτητή</legend>
+      <label><em>Συμπληρώστε τα στοιχεία σας με ελληνικούς χαρακτήρες</em></label>
+      <br>
+      <br>
+        <label for="submitted-name">Ονοματεπώνυμο</label><br>
+        <input type="text" placeholder="Όνομα" id="first-name" name="first-name" autocomplete="fname" required>
+        <input type="text" placeholder="Επώνυμο" id="last-name" name="last-name" autocomplete="lname" required/><br>
+        <br>
+       
+        <label for="submitted-adress">Στοιχεία διεύθυνσης</label><br>
+        <input type="text" placeholder="Οδός και αριθμός" id="street" name="street" autocomplete="street" style="width: 74%;" required >
+        <br>
+    
+        <br>
+        <input type="text" placeholder="Πόλη" id="city" name="city" autocomplete="city" required>
+        <input type="text" placeholder="Ταχυδρομικός κώδικας" id="postcode" name="postcode" autocomplete="postcode" required>
+        <br>
+        <br>
+        <label for="submitted-contact-info">Στοιχεία επικοινωνίας</label><br>
+        <input type="text" placeholder="Τηλέφωνο" id="phone" name="phone" autocomplete="phone" required>
+        <input type="text" placeholder="Διεύθυνση μέιλ" id="mail" name="mail" autocomplete="mail" required><br>
+        <br>
+        <label for="submitted-year">Έτος σπουδών</label>
+        <input type="radio" name="radans" value="A" /> Α
+        <input type="radio" name="radans" value="B" /> Β
+        <input type="radio" name="radans" value="C" /> Γ
+        <input type="radio" name="radans" value="D" /> Δ
+        <input type="radio" name="radans" value="E" /> Ε
+        <br>
+        <br>
+        <label for="student-id">Αριθμός μητρώου</label>
+        <br>
+        <input type="number" placeholder="1050505" id="student-id" name="student-id" autocomplete="student-id" required>
+        
+    </fieldset>
+
+    <fieldset>
+        <legend>Επιλέξτε πιστοποιητικό και τρόπο παραλαβής</legend>
+        <label for="doc-type">Είδος πιστοποιητικού</label>
+        <br>
+        <select name="Είδος πιστοποιητικού">
+            <option value="print" >Φωτοτυπία καρτέλας</option>
+            <option value="print" >Φωτοτυπία βεβαίωσης εξαμήνου</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Παραλαβή πιστοποιητικού</legend>
+        <label><input type = "radio" name="radans2" value="secretary" />Παραλαβή από την γραμματεία</label>
+        <br>
+        <label><input type = "radio" name="radans2" value="post" />Αποστολή στη διεύθυνση οικείας</label>
+        <br>
+        <br>
+        <label for="arrival-date">Ημερομηνία παραλαβής</label>
+        <br>
+        <input type="date" name="date" id="date" />
+    </fieldset>
+    <br>
+    <button style="width: 100px; padding: 5px; background-color: white; border: 1px solid #9e9e9e; border-radius: 5px;">Υποβολή</button>
+  </form>
+</body>  
+</html>
